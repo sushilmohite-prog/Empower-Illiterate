@@ -1,0 +1,377 @@
+*{
+    margin: 0; padding: 0%;box-sizing: border-box;
+     text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+nav{
+    width: 100%;
+    height: 90px;
+}
+.main_nav{
+    width: 80%;
+    height: 90px;
+    margin:auto;
+    display: flex;
+}
+.logo{
+    width: 25%;
+}
+.logo h1{
+    margin-top: 35px;
+    color: #ffffff;
+    
+
+}
+.menu{
+    width: 50%;
+}
+.menu ul{
+    list-style: none;
+     width: 100%;
+     height: 90px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.menu ul li{
+    margin-top: 35px; 
+    position: relative;  
+}
+.menu ul li a{
+    color: white;
+}
+.menu ul .no_active::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background:#009688;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    transition: 0.5s;
+}
+.menu ul .no_active:hover::after{
+    width: 100%;
+}
+ul .active {
+    margin-bottom: 25px;
+    width: 9%;
+    border-radius: 0px;
+    border-bottom: 3px solid #009688 ;
+}
+
+.logbtn{
+    width: 25%;
+}
+
+.logbtn button{
+    float: right;
+    border: 2px solid;
+    border-radius: 8px;
+    background:#009688;
+    padding: 10px 25px;
+    margin: 25px 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;    
+}
+.logbtn button:hover{
+    color:rgb(29, 29, 29);
+    background-color:rgb(216, 216, 216)
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/image/labour.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.content{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    font-size: 20px;
+    margin: 20px auto;
+    line-height: 25px;
+    font-weight: 100;
+}
+/*****************************************/
+
+  
+
+ .btn button{
+    width: 200px;
+    padding:12px 5px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.btn button:hover{
+    background-color: #009688;
+    color: white;
+    border: none;
+    transition: 0.7s ease;
+}
+ /*span{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left:0; 
+    bottom: 0;
+    z-index: -1;
+} */
+/***************HELP********************/
+.help{
+    width: 90%;
+    margin: 100px auto;
+}
+.help .help1{
+    display: flex;
+    height:400px;
+    margin: 70px auto;
+}
+.help1 .help_text1{
+    width: 50%;
+    height: 100%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.help_text1 h3{
+    color: rgb(37, 37, 37);
+    font-size: 35px;
+    margin: 20px auto;
+    /* text-shadow: 2px 2px 5px; */
+}
+.help_text1 p{
+    margin: 30px auto;
+    color: rgb(70, 98, 134);
+    font-size: 20px;
+}
+.help_text1 hr{
+    height: 3px;
+
+}
+.help1 .help_img1{
+    width: 50%;
+    margin: auto;
+}
+.help_img1 img{
+    width: 300px;
+    height: 400px;
+    float: right;
+    margin-right: 150px;
+    box-shadow: 2px 2px 7px;
+}
+.help .help2{
+    width: 100%;
+    display: flex;
+    height:400px;
+    margin: 70px auto;
+}
+.help2 .help_img2{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+.help_img2 img{
+    width: 500px;
+    height: 400px;
+    float: left; 
+    margin-left: 50px;
+    box-shadow: 2px 2px 7px;
+}
+.help2 .help_text2{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 40px;
+    text-align: left;
+}
+.help_text2 h3{
+    color: rgb(37, 37, 37);
+    font-size: 35px;
+    margin: 20px auto;
+    /* text-shadow: 2px 2px 5px; */
+}
+.help_text2 p{
+    margin: 30px auto;
+    color: rgb(70, 98, 134);
+    font-size: 20px;
+}
+.help_text2 hr{
+    height: 3px;
+}
+/************************ABOUT US*************/
+.abt{
+  margin-bottom: 170px;
+}
+.abt_title{
+    width: 100%;
+    text-align: center;
+    height: 90px;
+}
+.abt_title h2{
+    color:rgb(37, 37, 37);
+    font-size: 35px;
+    text-shadow: 2px 2px 5px;
+    line-height: 90px;
+}
+.abt_bg{
+    width: 100%;
+    height: 70vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(image/about1.jpg);
+    background-size: cover;
+    background-position:top;
+    
+    margin-top: 30px;
+
+}
+.abt_bg .abt_text{
+    width: 80%;
+    height: 60vh;
+    color: white;
+    margin:  auto;
+    position: relative;
+    top:50%;
+    transform: translateY(-40%);
+    text-align: left;
+}
+.abt_text h3{
+    font-size: 35px;
+    color:#b7f7d5 ;
+    margin-bottom: 30px;
+}
+.abt_text p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.abt .team{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+.team h3{
+    font-size: 25px;
+    color:rgb(37, 37, 37) ;
+    margin-bottom: 30px;
+}
+.team .dev1{
+    float: left;
+}
+.dev1 h4{
+    color: rgb(40, 41, 41);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.team .dev2{
+    float: right;
+}
+.dev2 h4{
+    color: rgb(40, 41, 41);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.dev1 p{
+    font-size: 18px;
+    color:rgb(70, 98, 134) ;
+}
+.dev2 p{
+    font-size: 18px;
+    color:rgb(70, 98, 134) ;
+}
+/*****************FOOTER***********************/
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.footer .f_text{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 0px;
+    color: rgb(216, 213, 213);
+    position: relative;
+    display: flex;
+    bottom:-95%;
+    transform: translateY(-220%);
+}
+.f_text .all_txt{
+    width: 26%;
+    height: auto;
+    margin: 0px auto;
+    text-align: center;
+}
+.all_txt li{
+    list-style: none;
+    margin-top: 10px;
+    color: rgb(180, 179, 179);
+}
+.all_txt li a{
+    color: rgb(180, 179, 179);
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    bottom:10%;
+    transform: translateY(200%);
+}
+.media a{
+    color: black;
+    font-size: 22px;
+    background-color: white;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 25px;
+    margin: 0px 10px;
+}
+.media .m_logo{
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.media a:hover{
+    opacity:0.6;
+    
+}
+.footer .f_last_txt{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    bottom:-5%;
+    transform: translateY(200%)
+}
+.f_last_txt p{
+    line-height: 50px;
+    color: rgb(155, 153, 153);
+    font-size: 12px;
+}
